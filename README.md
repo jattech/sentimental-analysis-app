@@ -28,44 +28,48 @@ sentimental-analysis-app/ ├── app.py # Archivo principal para ejecutar la 
 
     python train.py
 
-Uso
+## Uso
 
-Ejecuta la aplicación Flask:
+1. Ejecuta la aplicación Flask:
 
     python app.py
 
-Abre tu navegador y ve a http://127.0.0.1:5000.
+2. Abre tu navegador y ve a http://127.0.0.1:5000.
 
-Ingresa un mensaje en la página principal y presiona "Predict" para ver el resultado del análisis de sentimientos.
+3. Ingresa un mensaje en la página principal y presiona "Predict" para ver el resultado del análisis de sentimientos.
 
-Uso con Docker
+## Uso con Docker
 
-Construye la imagen Docker:
+1. Construye la imagen Docker:
 
-Ejecuta el contenedor:
+    docker build -t sentiment-analysis-app .
 
-Abre tu navegador y ve a http://127.0.0.1:5000.
+2. Ejecuta el contenedor:
 
-Archivos Clave
-app.py
+    docker run -p 5000:5000 sentiment-analysis-app
+
+3. Abre tu navegador y ve a http://127.0.0.1:5000.
+
+## Archivos Clave
+
+### app.py
 Este archivo contiene la lógica principal de la aplicación Flask. Carga el modelo entrenado y define las rutas para la página principal (/) y la predicción (/predict).
 
-train.py
+### train.py
 Este script entrena un modelo de regresión logística utilizando el dataset sentiment.tsv. El modelo y el vectorizador se guardan en model/logistic_clf.pkl.
 
-templates/home.html
+### templates/home.html
 Página principal donde el usuario puede ingresar un mensaje para analizar.
 
-templates/result.html
+### templates/result.html
 Página que muestra el resultado del análisis de sentimientos (positivo o negativo) junto con una imagen representativa.
 
-Dockerfile
+### Dockerfile
 Archivo para construir una imagen Docker que contiene la aplicación Flask.
 
-Dataset
+### Dataset
 El dataset sentiment.tsv contiene dos columnas:
 
-label: Etiqueta de sentimiento (pos para positivo, neg para negativo).
-body_text: Texto del mensaje.
-Créditos
-Este proyecto fue desarrollado como una demostración de análisis de sentimientos y containerización con Docker.
+    label: Etiqueta de sentimiento (pos para positivo, neg para negativo).
+
+    body_text: Texto del mensaje.
