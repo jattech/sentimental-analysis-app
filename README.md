@@ -4,7 +4,17 @@ Esta es una aplicación de análisis de sentimientos que utiliza un modelo de re
 
 ## Estructura del Proyecto
 
-    sentimental-analysis-app/ ├── app.py # Archivo principal para ejecutar la aplicación Flask ├── Dockerfile # Archivo para construir la imagen Docker ├── requirements.txt # Dependencias del proyecto ├── sentiment.tsv # Dataset de entrenamiento ├── train.py # Script para entrenar el modelo ├── model/ │ ├── logistic_clf.pkl # Modelo entrenado y vectorizador ├── templates/ │ ├── home.html # Página principal de la aplicación │ ├── result.html # Página de resultados
+    sentimental-analysis-app/ 
+        ├── app.py # Archivo principal para ejecutar la aplicación Flask 
+        ├── Dockerfile # Archivo para construir la imagen Docker 
+        ├── requirements.txt # Dependencias del proyecto 
+        ├── sentiment.tsv # Dataset de entrenamiento 
+        ├── train.py # Script para entrenar el modelo 
+        ├── model/ 
+            ├── logistic_clf.pkl # Modelo entrenado y vectorizador 
+        ├── templates/ 
+            ├── home.html # Página principal de la aplicación 
+            ├── result.html # Página de resultados
 
 
 ## Requisitos
