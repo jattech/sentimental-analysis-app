@@ -30,14 +30,12 @@ Esta es una aplicación de análisis de sentimientos que utiliza un modelo de re
    git clone <URL_DEL_REPOSITORIO>
    cd sentimental-analysis-app
 
-2. Instala las dependencias:
+2. Entrena el modelo (opcional) 
+
+    Instala las dependencias y ejecuta el script train.py:
 
     ```bash
     pip install -r requirements.txt
-
-3. Entrena el modelo (opcional si ya existe model/logistic_clf.pkl):
-
-    ```bash
     python train.py
 
 ## Uso con Docker
