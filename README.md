@@ -22,16 +22,19 @@ sentimental-analysis-app/ ├── app.py # Archivo principal para ejecutar la 
 
 2. Instala las dependencias:
 
+    ```bash
     pip install -r requirements.txt
 
 3. Entrena el modelo (opcional si ya existe model/logistic_clf.pkl):
 
+    ```bash
     python train.py
 
 ## Uso
 
 1. Ejecuta la aplicación Flask:
 
+    ```bash
     python app.py
 
 2. Abre tu navegador y ve a http://127.0.0.1:5000.
@@ -42,10 +45,12 @@ sentimental-analysis-app/ ├── app.py # Archivo principal para ejecutar la 
 
 1. Construye la imagen Docker:
 
+    ```bash
     docker build -t sentiment-analysis-app .
 
 2. Ejecuta el contenedor:
 
+    ```bash
     docker run -p 5000:5000 sentiment-analysis-app
 
 3. Abre tu navegador y ve a http://127.0.0.1:5000.
@@ -70,6 +75,5 @@ Archivo para construir una imagen Docker que contiene la aplicación Flask.
 ### Dataset
 El dataset sentiment.tsv contiene dos columnas:
 
-    label: Etiqueta de sentimiento (pos para positivo, neg para negativo).
-
-    body_text: Texto del mensaje.
+- label: Etiqueta de sentimiento (pos para positivo, neg para negativo).
+- body_text: Texto del mensaje.
