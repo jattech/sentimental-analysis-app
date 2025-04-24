@@ -30,17 +30,6 @@ sentimental-analysis-app/ ├── app.py # Archivo principal para ejecutar la 
     ```bash
     python train.py
 
-## Uso
-
-1. Ejecuta la aplicación Flask:
-
-    ```bash
-    python app.py
-
-2. Abre tu navegador y ve a http://127.0.0.1:5000.
-
-3. Ingresa un mensaje en la página principal y presiona "Predict" para ver el resultado del análisis de sentimientos.
-
 ## Uso con Docker
 
 1. Construye la imagen Docker:
